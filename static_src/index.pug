@@ -5,6 +5,12 @@ html(lang='en')
 		title Document
 
 	body
-		form(action="")
-			label
-			input(type='text')
+		form(action="" class='form-block js-form')
+			fiekdset
+				label(for='name') Имя
+				input(id='name' type='text' required)
+				label(for='email') Почта 
+				input(id='email' type='email' required)
+			a(href='#' class='submit js-submit') Отправить
+			span.error.js-error
+

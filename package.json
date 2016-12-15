@@ -1,5 +1,5 @@
 {
-  "name": "ValidateFormCSS",
+  "name": "ValidateFormJS",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -11,14 +11,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/s-kobets/ValidateFormCSS.git"
+    "url": "git+https://github.com/s-kobets/ValidateFormJS.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/s-kobets/ValidateFormCSS/issues"
+    "url": "https://github.com/s-kobets/ValidateFormJS/issues"
   },
-  "homepage": "https://github.com/s-kobets/ValidateFormCSS#readme",
+  "homepage": "https://github.com/s-kobets/ValidateFormJS#readme",
   "devDependencies": {
     "autoprefixer-loader": "^3.2.0",
     "babel-loader": "^6.2.7",
