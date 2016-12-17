@@ -13,15 +13,21 @@ window.addEventListener('DOMContentLoaded', function () {
 		e.preventDefault();
 		const form = this.closest('form');
 		for (let i = 0; i < length; i += 1) {
-			if (!required[i].checkValidity()) {
-				error.push(required[i].getAttribute('type'));
+			let type = required[i].getAttribute('type');
+			if (!required[i].checkValidity() && type !== error[error.length - 1]) {
+				error.push(type);
+			} else if (required[i].checkValidity() && type === error[error.length - 1]) {
+				error.pop();
 			}
+			console.log(required[i].checkValidity(), error);
 		}
 		errorClass.innerHTML = '';
 
 		if (error.length > 0) {
 			errorClass.innerHTML = `Введите ${error.join(' ')}`;
 			error = [];
+			errorClass.classList.add('error');
+			errorClass.classList.remove('success');
 		} else {
 			errorClass.classList.remove('error');
 			errorClass.classList.add('success');
